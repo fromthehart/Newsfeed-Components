@@ -1,116 +1,608 @@
 <!-- Do not add anything to the HTML until Part 3 of the project -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Lambda School Newsfeed</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="./CSS/index.css" />
-    <script src="./Menu/Menu.js" async></script>
-    <script src="./Article/Article.js" async></script>
-  </head>
-  <body>
-    <div class="header">
-      <img class="menu-button" src="./assets/menu.png"/>
-      <h1>Lambda School Newsfeed</h1>
-    </div>
-    <div class="menu">
-      <ul>
-        <li>Students</li>
-        <li>Faculty</li>
-        <li>What's New</li>
-        <li>Tech Trends</li>
-        <li>Music</li>
-        <li>Log Out</li>
-      </ul>
-    </div>
-    <div class="articles">
-      <div class="article">
-        <h2>Lambda School Students: "We're the best!"</h2>
-        <p class="date">Nov 5th, 2017</p>
 
-        <p>Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
-        moff wicket tatooine luke. Solo wampa wampa calrissian yoda moff. Darth grievous darth gonk darth hutt. Darth baba skywalker
-        watto fett jango maul han. Mon ewok sidious sidious lando kenobi grievous gamorrean solo. Yoda wedge utapau darth calamari.
-        Hutt calamari darth jabba. Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine skywalker. Qui-gonn
+<head>
+  <title>Lambda School Newsfeed</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./CSS/index.css" />
+  <script src="./Menu/Menu.js" async></script>
+  <script src="./Article/Article.js" async></script>
+</head>
+
+<body>
+  <div class="header">
+    <img class="menu-button" src="./assets/menu.png" />
+    <h1>Lambda School Newsfeed</h1>
+  </div>
+  <div class="menu">
+    <ul>
+      <li>Students</li>
+      <li>Faculty</li>
+      <li>What's New</li>
+      <li>Tech Trends</li>
+      <li>Music</li>
+      <li>Log Out</li>
+    </ul>
+  </div>
+  <div class="articles">
+    <div class="article">
+      <h2>Lambda School + Pioneer: Test Yourself, Win an $18,000 Living Stipend</h2>
+      <p class="date">Mar 18th, 2019</p>
+      <p><img src="https://cdn.buttercms.com/b41zcql6SMa2vWqzKAVG" alt="pioneer.png"
+          style="display: block; margin-left: auto; margin-right: auto;" /></p>
+      <p><span style="font-weight: 400;">At Lambda School, a big part of our job is finding and providing new tools and
+          opportunities for our students to stay engaged, inspired and excited about pushing themselves beyond what they
+          thought was possible in their work, their lives and themselves.</span></p>
+      <p><span style="font-weight: 400;">That&rsquo;s why today, we are very excited to announce a partnership with
+        </span><a href="https://pioneer.app"><span style="font-weight: 400;">Pioneer.</span></a></p>
+      <p><span style="font-weight: 400;">Pioneer is an online game for productivity. Players enroll with a project, then
+          spend 30 days trying to accumulate as many points as possible by demonstrating rapid progress on it.
+        </span><span style="font-weight: 400;"><br /></span></p>
+      <p><span style="font-weight: 400;">Points are awarded through a few mechanisms, but they are predominantly based
+          on peer voting: the more impressive your progress is to the other applicants, the better you'll fare. </span>
+      </p>
+      <p><span style="font-weight: 400;">Pioneer has created an unique competition and custom leaderboard, specifically
+          for current full time Lambda School students: <a
+            href="https://pioneer.app/lambdaschool">https://pioneer.app/lambdaschool</a>.</span></p>
+      <p><span style="font-weight: 400;">Entrants can submit a current project they are working on &nbsp;or pick a new
+          one.</span></p>
+      <p><span style="font-weight: 400;">When the competition closes at the end of April, the </span><b>top five
+          finishers, will be awarded $18,000 ($2,000 per month/for nine months) for use towards their living costs while
+          they are enrolled as full time Lambda School students. </b></p>
+      <p><span style="font-weight: 400;">Enrolling is simple and only takes a few minutes. Here&rsquo;s how:</span></p>
+      <ul>
+        <li style="font-weight: 400;"><span style="font-weight: 400;">Register for the next Pioneer tournament by using
+            this link: </span><a href="https://pioneer.app/join/lambdaschool"><span
+              style="font-weight: 400;">https://pioneer.app/join/lambdaschool</span></a><span
+            style="font-weight: 400;">. </span><span style="font-weight: 400;"><br /></span></li>
+        <li style="font-weight: 400;"><span style="font-weight: 400;">Apply with any project you choose. If you&rsquo;re
+            not sure of what to build, check out </span><a
+            href="https://pioneer.app/blog/pioneer-x-lambda-school/"><span style="font-weight: 400;">this
+              post</span></a><span style="font-weight: 400;"> for some ideas.</span><span
+            style="font-weight: 400;"></span></li>
+        <li style="font-weight: 400;"><span style="font-weight: 400;">Play the Pioneer Tournament and see where you
+            chart! Lambda Schoolers will be competing only with other Lambda school students for the five stipends.
+          </span></li>
+      </ul>
+      <button class="expandButton"></button>
+    </div>
+    <div class="article">
+      <h2>Announcing Living Stipends for Lambda School Students</h2>
+      <p class="date">Mar 12th, 2019</p>
+      <p><span style="font-weight: 400;">Today is a day I’ve been looking forward to since before Lambda School started,
+          and one I wasn’t sure would ever come to fruition.</span></p>
+      <p><span style="font-weight: 400;">It also feels very, very personal to me.</span></p>
+      <p><span style="font-weight: 400;"></span></p>
+      <h2><span style="font-weight: 400;">Starting with Nothing</span></h2>
+      <p><span style="font-weight: 400;">When I came to Silicon Valley from Utah I didn’t have much to offer the world.
+          I had no skills, no credentials, and practically no money. I didn’t even have enough to pay for a single
+          month’s rent.</span></p>
+      <p><span style="font-weight: 400;">But I knew I had to be a part of the future, and I was willing to do whatever
+          it took to get there. So I packed up a few of my things, gave the rest away, and <a
+            href="https://www.quora.com/Would-becoming-homeless-be-a-good-strategy-to-cut-costs-1/answer/Austen-Allred?fbclid=IwAR1ypB8OVbtMD9LE0mkp17iNEwTNcUfoT6hSJWVhaDH9J6Fx1qu21EEBNuY">lived
+            in a two-door Honda Civic</a> in Palo Alto. I learned how to be discreet in wealthy neighborhoods, how to
+          store food to not rot in the hot interior of a car, and most of all I learned to cope with the sheer
+          desperation of being a breath away from destitution while continuing to fight for a better future.</span><span
+          style="font-weight: 400;"></span></p>
+      <p><span style="font-weight: 400;">We started Lambda School for people like me - believing that if we could invest
+          in people to make them more successful it wouldn’t be hard for them to pay the investment back.</span></p>
+      <p><span style="font-weight: 400;"></span></p>
+      <h2><span style="font-weight: 400;">Access</span></h2>
+      <p><span style="font-weight: 400;">Despite the concern of nearly every finance mind we could talk to and anyone
+          who had ever started a school, we created a world-class school accessible from anywhere and free until hired.
+          Now we’re watching the effect that has on thousands of students, many of whom are just as brilliant and
+          hard-working as any of the billionaires I’ve met in Silicon Valley. After years of our entire team struggling
+          day and night it’s actually working.</span></p>
+      <p><span style="font-weight: 400;">But even as we expanded access to those folks, we found that for too many the
+          $0 tuition was only a start, there was the question of how to pay bills while going to school full time.
+          Parents, providers with mouths to feed, and folks everywhere who couldn’t buy enough time to learn the skills
+          that would make their time more valuable in the first place.</span></p>
+      <p><span style="font-weight: 400;">Today we’re excited to remove yet another barrier for yet another set of
+          people.</span></p>
+      <p><span style="font-weight: 400;"></span></p>
+      <h2><span style="font-weight: 400;">The Lambda School Living Stipend Pilot</span></h2>
+      <h3><strong>Starting today, we’re going to pay students accepted for the stipend $2,000/month for 9 months so they
+          can learn the highest-paying skills in the world.</strong></h3>
+      <h3><strong>And they will only pay us back if they land a job that pays $50k/yr or more.</strong></h3>
+      <p><span style="font-weight: 400;">When they do secure that kind of income, they’ll pay Lambda School 10% of their
+          income for 5 years, so we can continue to pay it forward to the next student.</span></p>
+      <p><span style="font-weight: 400;">This means Lambda School is now offering world-class instruction, deep
+          curriculum, a community of fellow learners, industry mentors, career coaches, hiring partners, interview
+          sourcers, and now we’re going to begin giving people cold hard cash.</span></p>
+      <p><span style="font-weight: 400;">We’ve been piloting this successfully at a smaller scale, and while we still
+          won’t be able to serve everyone who stands in need we’re excited to watch this change the lives of many
+          people. </span></p>
+      <p><span style="font-weight: 400;">As we continue to prove that this model works we can begin putting millions
+          (and hopefully soon billions) of dollars behind it.</span></p>
+
+      <p><a href="https://lambdaschool.com/stipend">Prospective students can apply for the living stipend
+          here.</a>&nbsp;</p>
+      <p><a href="https://lambdaschool.typeform.com/to/YOY4Xo">Current students can apply for a living stipend here.</a>
+      </p>
+      <h2><b>FAQS: Lambda’s Living Stipend Program:</b></h2>
+      <h3><b>What is the Lambda Living Stipend Pilot Program?</b></h3>
+      <p><span style="font-weight: 400;">Lambda School will be offering both current and prospective students the
+          opportunity to apply for a total of $18K USD in financing to support their living expenses while they are
+          enrolled as full time Lambda School students. </span></p>
+      <h3><b>Why is Lambda School trying to launch this?</b></h3>
+      <p><span style="font-weight: 400;">Our goal at Lambda School is to help our student really succeed to the best of
+          their ability and to remove the barriers that are currently preventing more people from being able to access a
+          high tech education - and the career, financial, impact and other benefits that come with it. </span></p>
+      <p><span style="font-weight: 400;">We know that one of the hardest parts of deciding to go back to school is
+          figuring out how to make it work without a full time salary.</span></p>
+      <p><span style="font-weight: 400;">By launching this Living Stipend Pilot Program, we are looking at how we can
+          create more products and innovative ways to help support our current students - and to expand who can become a
+          Lambda School student.</span></p>
+      <h3><b>How will it operate?</b></h3>
+      <p><span style="font-weight: 400;">Students who are selected will receive $18,000 USD paid in nine monthly
+          payments of $2,000 USD for the duration of the full time nine month program.</span></p>
+      <p><span style="font-weight: 400;">To continue to receive the stipend students have to maintain full time status
+          and the 100% sprint pass rate expected from all Lambda School students - regardless of whether they are
+          receiving a living stipend.</span></p>
+      <h3><b>Who can apply for the stipend?</b></h3>
+      <p><span style="font-weight: 400;">This program is open to current and prospective full time Lambda School
+          students who are living in and eligible to work in the United States.</span></p>
+      <h3><b>Do students then pay back the money?</b></h3>
+      <p><span style="font-weight: 400;">Yes, this is a stipend and not a scholarship.</span></p>
+      <p><span style="font-weight: 400;">Upon completion of the nine month program students will be required to pay 10%
+          of their salary for 5 years. The stipend is built into that amount.</span></p>
+      <h3><b>But how does this work with my education ISA?</b></h3>
+      <p><span style="font-weight: 400;"> The Lambda School tuition Income Share Agreement has students on a repayment
+          plan of 17% for two years.&nbsp;</span></p>
+      <p><span style="font-weight: 400;">For students who receive the living stipend as well, this becomes 10% of their
+          salary for five years and replaces the model above.</span></p>
+      <h3><b>What are the selection criteria?</b></h3>
+      <p><span style="font-weight: 400;">We will not be looking at student financials or credit scores.</span></p>
+      <p><span style="font-weight: 400;"> Instead the applications will be screened using the following questions:
+        </span></p>
+      <p><i><span style="font-weight: 400;">Why do you need this living stipend to be successful as a Lambda School
+            student?</span></i></p>
+      <p><i><span style="font-weight: 400;">Tell us a bit about the unique part of your story that will make you a
+            valuable addition to both the Lambda and tech community? </span></i><b><br><br></b></p>
+      <p><i><span style="font-weight: 400;">Tell us why we should bet on you?</span></i></p>
+      <h3><b>Who will be selecting the recipients?</b></h3>
+      <p><span style="font-weight: 400;">Our current Lambda School admissions team will be handling these stipend
+          applications </span></p>
+      <h3><b>How many students will receive the stipend?</b></h3>
+      <p><span style="font-weight: 400;">This is a limited and selective pilot program and to launch we will be looking
+          for our first 50 recipients.</span></p>
+      <h3><b>Do recipients have to account for how they spend the money?</b></h3>
+      <p><span style="font-weight: 400;">No</span></p>
+      <h3><b>Will Lambda School be expanding this program, when?</b></h3>
+      <p><span style="font-weight: 400;">Yes, stay tuned for more details. </span></p>
+      <p><span style="font-weight: 400;">Still have a question? Please contact <a
+            href="mailto:admissions@lambdaschool.com">admissions@lambdaschool.com</a></span></p>
+      <button class="expandButton"></button>
+    </div>
+    <div class="article">
+      <h2>Lambda Mentor Program: Helping Students Build Local Personal Networks</h2>
+      <p class="date">Feb 22nd, 2019</p>
+      <p><img src="https://cdn.buttercms.com/3ufwz1bkQQuIlpehvWIa" alt="rawpixel-665384-unsplash.jpg"></p>
+      <p>Today we're announcing the Lambda Mentor program, the best way to get involved with Lambda School by mentoring
+        and spending time with students in your local area. Many students come to Lambda School with no network in
+        technology. But we've learned that many folks in the broader community who follow Lambda School are among the
+        best and brightest in their community, and have offered or are looking for ways to give back to help new
+        developers and designers in their area. We want to help make that happen.</p>
+      <p>We'll continue to build on the Lambda Mentor program, but today we're launching <strong>Weekly Checkins, a
+          regular ~45 minute one-on-one with a new developer in your local area who's still attending classes to check
+          in, give them feedback on their work, offer support, and help orient them to the tech community in your
+          area</strong>.</p>
+      <p>Bring your expertise and willingness to help someone new in your community, we'll provide an agenda, an e-mail
+        summary of what the student's been working on, and suggested questions or discussion topics every week. Most
+        meetings can take place on Zoom or over the phone, but we would love for students to start building their
+        in-person local network as well, so meeting in real life occasionally is encouraged.</p>
+      <p>Everyone can think of a few key people in life that got them where they are, this is your best chance to be
+        that person for someone who needs it.</p>
+      <p>We're building a pilot group of 35 mentors willing to work with at least one student per week as we experiment
+        and prove the model. Once we have a consistent, repeatable, reliable experience for mentors and students alike,
+        we'll expand the program to support as much of our student body as possible.</p>
+      <h2>Q&amp;A</h2>
+      <p><b>What do I get for becoming a Lambda Mentor?</b></p>
+      <p>The first group of Lambda Mentors will be extremely important in helping us build a next-level experience for
+        all of our students. To recognize that, we'll be featuring Lambda Mentors on our upcoming Mentors page, adding
+        regular shoutouts in our newsletter and social media, inviting mentors to our internal Lambda Slack community,
+        and creating exclusive Lambda Mentor swag.</p>
+      <p><b>How else can I get involved?</b></p>
+      <p>We've had hundreds of people ask us how they can get involved helping students in their local area, but we know
+        a weekly one-on-one is not the right fit for everyone.</p>
+      <p>We're experimenting with other ways to build hyper-local in-person networks for our students, including
+        sponsoring meetups, casual nights of code at coffee shops, and office tours. We want to provide the venue, the
+        drinks, the food, the agenda, or whatever else it takes to help build these local communities. We're still
+        exploring the right way to do so, and would love your input. Send us your feedback and ideas&nbsp;on Twitter, or
+        e-mail <a href="mailto:mentor@lambdaschool.com">mentor@lambdaschool.com</a>.</p>
+      <p><b>What's the commitment here?</b></p>
+      <p>For the one-on-one weekly checkin, we're hoping for 45-60 minutes a week at a consistent time.</p>
+      <p><b>How many students would I be working with?</b></p>
+      <p>We expect most mentors will start with one or two students that live or want to work in their local area. Our
+        students are spread pretty evenly across the United States. Bigger metropolitan areas will have a few dozen
+        students, while smaller cities may not have any yet. If we have more students and you want to work with them,
+        we'd love that. But no pressure.</p>
+      <p>If you're interested, sign up and we'll get in touch with some more specifics about students in your area right
+        away.&nbsp;</p>
+      <p><b>How do I get started?</b></p>
+      <p>We're just building out the program, but we're taking signups now and hope to start meetings with our pilot
+        group of Lambda Mentors in the next two weeks. Go ahead and follow the link below to sign up.</p>
+      <h2>Sign Up</h2>
+      <p><a href="https://lambdaschool.typeform.com/to/uVGRlK">Sign up for the mentor program here.</a></p>
+      <button class="expandButton"></button>
+    </div>
+    <div class="article">
+      <h2>Lambda Part-Time: Better Projects, Extended Courses, New Time Zones</h2>
+      <p class="date">Feb 7th, 2019</p>
+      <p><img src="https://cdn.buttercms.com/5BUuhitGTx6qJiWLr4Nh" alt="bonnie-kittle-186235-unsplash.jpg"></p>
+      <p>Last week we announced that we were <a
+          href="https://medium.com/lambda-school-blog/lambda-updates-integrated-career-search-farewell-to-graduation-and-9-month-classes-312ced2c2ed2">doubling
+          down on student outcomes</a> by integrating our careers curriculum and job search directly into class,
+        eliminating graduation, and extending our full-time courses to 9 months. This week we're excited to announce
+        some new changes to bring the same relentless focus on student outcomes to our part-time programs.</p>
+      <h3 id="syncingupnewfulltimeprogramstoparttime">Syncing Up New Full-time Programs to Part-Time</h3>
+      <p>Our stance on part-time programs is that there should be zero asterisks next to a part-time graduate vs a
+        full-time graduate. So when we planned out the class, we doubled the length of the course to make sure students
+        had the same number of class sessions, projects, code challenges, etc. We use the same curriculum, same
+        projects, same structure.&nbsp;The only difference is the schedule.</p>
+      <p>When we announce any new change to our full-time programs, one of the first questions we get is "how will this
+        affect part-time?". Excited to share a few more specifics in this post. Specifically, how we're bringing Build
+        Weeks, Lambda Labs, and our new integrated job search into the program.</p>
+      <p><strong><em>Build Weeks</em></strong>. We're kicking off the pilot of Build Weeks with part-time on Monday.
+        Project sprints in part-time used to last one week. With the new Build Week model, we're moving to two weeks, so
+        students are able to have the full experience and build the same level of project in our flexible evening class
+        schedule.</p>
+      <p><strong><em>Lambda Labs</em></strong>. We're moving Lambda Labs forward from the end of class to the middle of
+        class. That means part-time students will take nearly three months to build a group project before entering the
+        Computer Science portion of class. Just like full-time, students will begin their job search after completing
+        Labs, approximately 9 months into the program.</p>
+      <p><strong><em>Integrated Job Search</em></strong>. Students will begin working with our Careers team on regular
+        workshops about one month after beginning class.</p>
+      <h3 id="flexiblefifthday">Flexible Fifth Day</h3>
+      <p>Our part-time classes run Monday-Thursday, 6-9PM Pacific, and Saturday mornings from 9AM-12PM Pacific. The
+        fifth day of class has always been more of a challenge for many students to commit to.</p>
+      <p>Today we're announcing that <strong>we're making the Saturday morning session flexible</strong>. Soon students
+        across our part-time programs will be able to choose Friday evening, Saturday morning, Saturday afternoon, or
+        Sunday morning, to best fit their schedule.</p>
+      <p>Because we're keeping the same Saturday time slot, nothing changes for current students unless they opt-in to a
+        better time for them. We're really excited to be able to make this a more flexible option for our students who
+        need it.</p>
+      <h3 id="extendedcourselength">Extended Course Length</h3>
+      <p>In order to accomodate the new full-length Build Weeks sprints, <strong>we're extending the posted course
+          length to 14 months</strong>. Students will be able to opt-in to a full 18 month version of class that allows
+        for 4 additional months of job search, but will not be required to do so.</p>
+      <p>Students in part-time will begin their job search 9 months into the program, so they'll have plenty of built in
+        time to reinforce their skills and search for jobs within the 14 month schedule. But for those who need the
+        additional time, we're making it available.</p>
+      <h3 id="newstartdates">New Start Dates and Time Zones</h3>
+      <p>Our part-time class is incredibly popular. Later this month students who need the more flexible schedule will
+        make up nearly half of our student body. In order to make class even more flexible, we're adding start dates in
+        an all new time zone to better support students living in the Central and Eastern time zones.</p>
+      <p>In the short-term we're adding a new March 18th start date. <strong>Moving forward we'll have start dates every
+          five weeks, aligning with our full-time start dates</strong>. (In addition to other benefits, that means
+        students will be able to seamlessly switch between full-time or part-time if their work situation changes.)</p>
+      <p><strong>Each start date will alternate between running on Pacific and Central time zones</strong>. March 18th
+        will be our first Central time cohort, April 22 will run on Pacific time, May 28th on Central, etc.
+        Monday-Thursday 6PM-9PM + Flexible Fifth (choose either Friday evening, Saturday Morning, Saturday Afternoon, or
+        Sunday Morning).&nbsp;</p>
+      <p>So if you live on the East Coast and have been waiting for Lambda School to offer part-time classes that don't
+        run until midnight, this one's for you.</p>
+      <h3 id="noasterisks">No Asterisks</h3>
+      <p>When we decided to launch a part-time course, nearly half of our team at Lambda School had been involved in
+        teaching evenings and weekend classes. Most fell short with miserable completion rates, and short-changed
+        students. Take a look, many schools label their part-time classes to make sure folks don't have the same
+        expectations as they would taking a full-time class. Our instruction team refused to run a part-time program
+        until we addressed those issues. A part-time student should have every skill, every project, every opportuntiy
+        that a full-time student does. No asterisks.</p>
+      <p>These changes help us ensure we can continue to do that.</p>
+      <p>If you're interested in a part-time class, <a href="https://lambdaschool.com/shadow">sign up to shadow</a> one
+        of our courses later this month, or <a href="https://apply.lambdaschool.com">apply now</a> to get in on our next
+        start date.</p>
+      <p>If you want to hire a student from Lambda School with zero downside, check our our <a
+          href="https://lambdaschool.com/hire-apprenticeships/">Apprenticeship program</a>.</p>
+      <p>And if you want to help us change the face of career and technical education, check out our <a
+          href="https://lambdaschool.com/careers/">Careers page</a>. We're hiring across product, engineering, design,
+        instruction, growth, career coaching, and more.</p>
+      <button class="expandButton"></button>
+    </div>
+    <div class="article">
+      <h2>Lambda School Signs Partnership Agreement with CodeDoor</h2>
+      <p class="date">Feb 6th, 2019</p>
+      <p><b>Pleasanton, California —</b><span style="font-weight: 400;"> On the heels of their recent Series B
+          fundraising announcement, Lambda School has just signed a partnership agreement with CodeDoor, a German-based
+          nonprofit providing scholarships in coding to women, migrants, and refugees. This partnership will enable
+          CodeDoor students to become software engineers by joining one of Lambda’s recently-launched EU cohorts and
+          receiving tutoring and career coaching from CodeDoor’s talented staff. </span></p>
+      <p><span style="font-weight: 400;">“Our two organizations compliment each other incredibly well, so we’re thrilled
+          to make this official and start providing new career opportunities for even more students in Germany and
+          beyond,” said Aaron Neuenschwander, Head of Strategic Partnerships at Lambda School.</span></p>
+      <p><span style="font-weight: 400;">As part of the agreement, CodeDoor will help identify and prepare interested
+          students for one of Lambda School’s available EU cohorts. Once students are enrolled into Lambda School
+          they’ll be able to lean on CodeDoor tutors for support in difficult concepts. &nbsp;They’ll also receive
+          additional career coaching and networking opportunities from CodeDoor. CodeDoor has deep and respected
+          connections in the European tech industry, ones that will afford Lambda students even more employment
+          opportunities.</span></p>
+      <p style="text-align: center;"><span style="font-weight: 400;"><img
+            src="https://cdn.buttercms.com/caFl3UKBRwGJqVd21DIo" alt="CodeDoor_Engineering_Students.jpeg"></span><span
+          style="font-weight: 400;"></span><i><span style="font-weight: 400;">Students hard at work at CodeDoor in
+            Munich</span></i><span style="font-weight: 400;"></span></p>
+      <p><span style="font-weight: 400;">Lambda School’s business model has opened up doors to students who previously
+          could not pursue a world-class technical education due to a number of factors, including cost and location. In
+          much the same way, CodeDoor has facilitated economic mobility and social integration for individuals from
+          underprivileged and underserved communities. These largely untapped communities in the tech sector could play
+          a big role in narrowing the skills gap which currently exists in the marketplace.</span></p>
+      <p><span style="font-weight: 400;">“We see this partnership as being a very important piece to ensure we hit our
+          goal of helping 1,000 women and other untapped groups launch a new tech career within three years,” said Karan
+          Dehghani, Founder of CodeDoor. CodeDoor recently launched the aforementioned initiative entitled Code1000 -
+          with the goal of helping 1,000 individuals launch a new career in technology. </span></p>
+      <p><span style="font-weight: 400;">Many of the CodeDoor students who want to get into computing jobs are highly
+          skilled and motivated individuals, but they simply haven’t had appropriate opportunities. While some of the
+          students have previous tech experience, there is no prerequisite of a tech background or college degree to
+          join their program (nor is it for Lambda School students). CodeDoor and Lambda School are searching for
+          individuals with an aptitude towards learning and using technology, who exhibit an ambition to pursue a career
+          in the ever-changing tech sector.</span></p>
+      <p><span style="font-weight: 400;">The combined strengths of Lambda School and CodeDoor will make this partnership
+          a solid and steady pipeline of talent for EU employers. If you’re interested in learning more about the
+          partnership, please reach out to Nora Schimang, </span><span
+          style="font-weight: 400;">nora@codedoor.org</span><span style="font-weight: 400;">.</span></p>
+      <p><span style="font-weight: 400;">Media Links:</span></p>
+      <p><span style="font-weight: 400;">Lambda YouTube Video -</span> <a
+          href="https://www.youtube.com/watch?v=gLdXxFS8BV4"><span
+            style="font-weight: 400;">https://www.youtube.com/watch?v=gLdXxFS8BV4</span></a></p>
+      <p><span style="font-weight: 400;">CodeDoor Link - <a href="http://www.codedoor.org/">http://www.codedoor.org</a>
+        </span></p>
+      <p style="text-align: center;">###</p>
+      <p><b>Contacts:</b></p>
+      <p><span style="font-weight: 400;">Aaron Neuenschwander, Head of Strategic Partnerships</span></p>
+      <p><span style="font-weight: 400;">Lambda School
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      </p>
+      <p><a href="mailto:aaronn@lambdaschool.com"><span style="font-weight: 400;">aaronn@lambdaschool.com</span></a></p>
+      <p><b>&nbsp;</b></p>
+      <p><span style="font-weight: 400;">Nora Schmiang, Head of Communication</span></p>
+      <p><span style="font-weight: 400;">CodeDoor</span></p>
+      <p><b><a href="mailto:nora@codedoor.org"><span style="font-weight: 400;">nora@codedoor.org</span></a> </b></p>
+      <p style="text-align: center;"><b>###</b></p>
+      <p><b>About Lambda School</b></p>
+      <p><span style="font-weight: 400;">Lambda School is a Computer Science academy that trains people to become
+          software engineers and data scientists at no up-front cost. Lambda School’s mission is to remove every
+          possible barrier to a world-class education and become the best place in the world to launch a new career.
+          Instead of paying tuition, students agree to pay a percentage of their income after they are employed, and
+          only if they're making $50K or more per year. &nbsp;Lambda School has five tracks: Full Stack Web Development
+          (80% of student body), Data Science, iOS Development, Android development, and User Experience</span><span
+          style="font-weight: 400;">. </span><span style="font-weight: 400;">Lambda School is &nbsp;backed by some of
+          the world’s leading investors, including Google Ventures, Y-Combinator, Bedrock Capital, Sound Ventures, GGV
+          Capital and Stripe. </span></p>
+      <p><span style="font-weight: 400;">Web address: </span><a href="http://www.lambdaschool.com"><span
+            style="font-weight: 400;">http://www.lambdaschool.com</span> </a></p>
+      <p><b>About CodeDoor</b></p>
+      <p><span style="font-weight: 400;">CodeDoor is a non-profit company based in Frankfurt, German focused on
+          providing skills in technology to women, migrants, and refugees. &nbsp;CodeDoor is an educational network of
+          developers at all levels of expertise and companies of all sizes. When joining the CodeDoor network, students
+          will be matched with great coders and companies. CodeDoor enables students to learn the skills tailored to the
+          needs of the particular company. &nbsp;CodeDoor also helps students to build their own startup. As of January
+          2019, CodeDoor has helped ~750 people to learn how to code and find a job.</span></p>
+      <p><span style="font-weight: 400;">Web address: <a
+            href="http://www.codedoor.org/">http://www.codedoor.org/</a></span></p>
+      <button class="expandButton"></button>
+    </div>
+    <div class="article">
+      <h2>Integrated Career Search, Farewell to Graduation, and 9 Month Classes</h2>
+      <p class="date">Jan 31st, 2019</p>
+      <p><img src="https://cdn.buttercms.com/10hvuieeTq2GlX0CUCtf" alt="lambda collage.jpg"></p>
+      <p>When we started Lambda School we wanted to build the most outcomes-driven school in the world. Our first value
+        at Lambda School reads: <b>Student Obsessed – We are relentless in pursuit of student outcomes.</b></p>
+      <p>We've gotten a pretty good start over the past 18 months. We've hired&nbsp;<a
+          href="https://lambdaschool.com/company/">world class instructors and instructional designers</a>, we launched
+        <a
+          href="https://lambdaschool.com/blog/introducing-lambda-next-our-revolutionary-new-job-search-and-placement-program/">Lambda
+          Next</a> – our full-time alumni career support program that sticks with students until they're in a job they
+        love, <a href="https://twitter.com/austenallred/status/1069584101815013377">Build Weeks</a> – where students
+        from various cohorts of the school work together to build production-ready applications, Principles for Success
+        – our weekly career readiness workshops designed to teach the non-technical skills that separate the
+        inexperienced from professionals, and recently announced&nbsp;<a
+          href="https://lambdaschool.com/blog/introducing-lambda-async-our-way-to-guarantee-student-job-readiness/">Async</a>
+        – our mastery-based progression program, where students are able to work on every concept until they have
+        mastered it.</p>
+      <p>Today we’re doubling down on student outcomes with three announcements – we're integrating the job search
+        directly into our curriculum, replacing graduation with job celebrations, and extending the posted course length
+        to nine months.&nbsp;</p>
+      <h2>Change One: The job hunt now happens <i>during</i> Lambda School, not after it</h2>
+      <p>Like students at most schools, Lambda School students have gone through three stages:</p>
+      <ol>
+        <li style="font-weight: 400;">Learn</li>
+        <li style="font-weight: 400;">Graduate</li>
+        <li style="font-weight: 400;">Look for a job</li>
+      </ol>
+      <p>Unfortunately, life changes after graduation in a couple of difficult ways. The extrinsic motivation and social
+        accountability that propels a student through challenging coursework disappears. The concrete daily schedule
+        becomes completely open. Support from friends and family dries up. At the end of the day, despite new skills and
+        ambition to get started in their new career, many students have to find work of any kind immediately, often
+        resorting to Uber, a temp job with a friend, or the same job they had before class.&nbsp;All too often, those
+        students fall out of practice, and for every passing day it becomes harder to get into the first new job.</p>
+      <p>So we're integrating the job search into the course.&nbsp;Students will begin working with our Careers team
+        within a month of starting class, working on their portfolio, building their network, and creating their job
+        search plan. They'll work through our new series of Career and Professional Development workshops spread across
+        the course. They'll build their first team capstone projects in&nbsp;<a
+          href="https://lambdaschool.com/blog/how-lambda-school-labs-works-whiteboard-friday/">Lambda Labs,</a>&nbsp;our
+        internal apprenticeship program, about halfway through class. And then they'll begin their job search in earnest
+        working with their assigned Career Coach. All the while, they'll be participating in our Company Presentations
+        series, where hiring managers with open positions from companies like The New York Times, Uber, and Etsy recruit
+        students in private presentation and Q&amp;A sessions.</p>
+      <p>All of these changes are made in the hope that <b>many students will be hired before completion of Lambda
+          School</b>.</p>
+      <h2>Change Two: Graduation will be replaced with Job Celebrations</h2>
+      <p>Graduation is an outmoded tradition that serves as a false finish line for students and the school. Tradition
+        tells graduates that the learning is over, and tells the school that the job is done. Neither of these are true
+        at Lambda School.&nbsp;So <strong>to keep our eye on the real destination we're trading graduation ceremonies
+          for job celebrations</strong>. Every student will get their time in the limelight, but that will happen when
+        they've reached the real goal of landing that first job.&nbsp;</p>
+      <p>We're expanding on our tradition where&nbsp;<a
+          href="https://twitter.com/LambdaSchool/status/1054418400896667650">students share their offer selfies when
+          they accept a job</a>&nbsp;with a weekly schoolwide event to celebrate every newly hired student, giving each
+        one the chance to share their story and advice with the entire school.&nbsp;</p>
+      <h2>Change Three: Lambda School is now nine months full-time</h2>
+      <p>In order to accommodate these and other curriculum changes, beginning in May <b>Lambda School's posted length
+          will be nine months full-time</b>. The part-time length will be adjusted accordingly.</p>
+      <p>Some students will be hired sooner, while others will study the full nine months. Now, however, a student can
+        plan on a set amount of time to attend Lambda School <i>and</i> land a job, instead of a finite amount of time
+        to attend Lambda School and an unknown amount of time afterwards.</p>
+      <p>Importantly, a Lambda School student will end up with 1,500-2,000 hours of training. Because we are working
+        full-time and more every day, Lambda School students will spend a similar amount of time&nbsp;during their nine
+        months at Lambda School as a Computer Science student would during the CS-focused portion of a four-year CS
+        degree.</p>
+      <p>We’re really happy that we’re able to make this happen with <strong>no change in cost to students</strong>. So
+        you’ll be able to attend up to 9 months of Lambda School and pay nothing until you land a job making more than
+        $50,000 a year, at which point you’d pay 17% of your income for two years, with the same maximum $30k cap.</p>
+      <p>While our posted course length will change for everyone in May, current students will be able to opt-in to the
+        nine month schedule right away.</p>
+      <h2>We're just getting started</h2>
+      <p>We have a lot of things we're very proud of at Lambda School, but we're <a
+          href="https://twitter.com/AustenAllred/status/1069635938601656321">just getting started</a>. Come join us.</p>
+      <p>If you’re interested in kicking off your own career in tech, <a href="https://lambdaschool.com/apply">submit an
+          application</a> to get access to our free precourse work.</p>
+      <p>If you want to experience what it’s like to learn at Lambda School, you can <a
+          href="https://lambdaschool.com/audit/">shadow any of our live courses</a>.</p>
+      <p>If you’re <a href="https://lambdaschool.com/hire/">hiring</a> or you’ve got a project you’d like our students
+        to build for free, <a
+          href="https://lambdaschool.com/blog/announcing-lambda-co-op-community-driven-projects-built-by-students-for-free/">get
+          in touch with our Co-op team</a>.</p>
+      <p>And finally, we’re hiring! If you’re also obsessed with getting students into great jobs in a new career, check
+        out our<a href="https://lambdaschool.com/careers"> careers page</a> to see our open jobs or <a
+          href="mailto:contact@lambdaschool.com">get in touch</a> about how you want to help us change career and
+        technical education.</p>
+      <button class="expandButton"></button>
+    </div>
+    <div class="article">
+      <h2>Lambda School Students: "We're the best!"</h2>
+      <p class="date">Nov 5th, 2017</p>
+
+      <p>Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura
+        skywalker lando
+        moff wicket tatooine luke. Solo wampa wampa calrissian yoda moff. Darth grievous darth gonk darth hutt. Darth
+        baba skywalker
+        watto fett jango maul han. Mon ewok sidious sidious lando kenobi grievous gamorrean solo. Yoda wedge utapau
+        darth calamari.
+        Hutt calamari darth jabba. Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine
+        skywalker. Qui-gonn
         jar twi'lek jinn leia jango skywalker mon. </p>
 
-        <p>Grievous fett calamari anakin skywalker hutt. Alderaan darth kenobi darth r2-d2
-        windu mothma. Sidious darth calamari moff. Wampa mothma sith wedge solo mara. Darth gonk maul sith moff chewbacca palpatine
-        mace amidala. C-3po solo skywalker anakin yoda leia. Maul wampa bespin watto jade ewok darth jabba. Lando dantooine moff
-        k-3po dantooine luke. Fisto mandalore darth wedge c-3p0 ahsoka. Secura moff palpatine fett. Anakin sith darth darth. Moff
-        solo leia ben ponda jade. Binks jango aayla skywalker skywalker cade. Mustafar darth ventress anakin watto. Yavin jawa sebulba
+      <p>Grievous fett calamari anakin skywalker hutt. Alderaan darth kenobi darth r2-d2
+        windu mothma. Sidious darth calamari moff. Wampa mothma sith wedge solo mara. Darth gonk maul sith moff
+        chewbacca palpatine
+        mace amidala. C-3po solo skywalker anakin yoda leia. Maul wampa bespin watto jade ewok darth jabba. Lando
+        dantooine moff
+        k-3po dantooine luke. Fisto mandalore darth wedge c-3p0 ahsoka. Secura moff palpatine fett. Anakin sith darth
+        darth. Moff
+        solo leia ben ponda jade. Binks jango aayla skywalker skywalker cade. Mustafar darth ventress anakin watto.
+        Yavin jawa sebulba
         owen jinn tatooine sith organa.</p>
 
-        <p>Dagobah hutt jawa leia calamari ventress skywalker yoda. Binks wicket hutt coruscant sidious
-        naboo ackbar tatooine. Hutt lars padmé darth. Maul solo darth darth jabba qui-gon chewbacca darth maul. Moff baba wicket
-        han. C-3po antilles moff qui-gon ahsoka aayla dooku amidala. Palpatine droid amidala droid k-3po twi'lek padmé wookiee. Leia
+      <p>Dagobah hutt jawa leia calamari ventress skywalker yoda. Binks wicket hutt coruscant sidious
+        naboo ackbar tatooine. Hutt lars padmé darth. Maul solo darth darth jabba qui-gon chewbacca darth maul. Moff
+        baba wicket
+        han. C-3po antilles moff qui-gon ahsoka aayla dooku amidala. Palpatine droid amidala droid k-3po twi'lek padmé
+        wookiee. Leia
         moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.</p>
-        <span class='expandButton'></span>
-      </div>
-      <div class="article">
-        <h2>Javascript and You, ES6</h2>
-        <p class="date">Nov 7th, 2017</p>
-        <p>Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost
-        Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot
-        snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods
-        yew pumpkin juice phials Ravenclaw’s Diadem 10 galleons Thieves Downfall. Ministry-of-Magic mimubulus mimbletonia Pigwidgeon
-        knut phoenix feather other minister Azkaban. Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed.
+      <span class='expandButton'></span>
+    </div>
+    <div class="article">
+      <h2>Javascript and You, ES6</h2>
+      <p class="date">Nov 7th, 2017</p>
+      <p>Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur
+        portkey ghost
+        Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus.
+        Padfoot
+        snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell
+        lies. Mudbloods
+        yew pumpkin juice phials Ravenclaw’s Diadem 10 galleons Thieves Downfall. Ministry-of-Magic mimubulus
+        mimbletonia Pigwidgeon
+        knut phoenix feather other minister Azkaban. Hedwig Daily Prophet treacle tart full-moon Ollivanders
+        You-Know-Who cursed.
         Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.</p>
-      
-        <p>Boggarts lavender robes, Hermione Granger Fantastic Beasts and Where to Find Them. Bee in your bonnet Hand of Glory elder
-        wand, spectacles House Cup Bertie Bott’s Every Flavor Beans Impedimenta. Stunning spells tap-dancing spider Slytherin’s Heir
-        mewing kittens Remus Lupin. Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second bedroom. Padma
-        and Parvati Sorting Hat Minister of Magic blue turban remember my last.</p>
-        <span class='expandButton'></span>
-      </div>
-      <div class="article">
-        <h2>React vs Angular vs Vue</h2>
-        <p class="date">Nov 7th, 2017</p>
 
-        <p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Squirtle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Wartortle Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit. Blastoise Lorem ipsum dolor sit amet, consectetur adipiscing elit. Caterpie Lorem
-        ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing elit. Butterfree
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weedle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Kakuna Lorem ipsum dolor sit amet, consectetur adipiscing elit. Beedrill Lorem ipsum dolor sit amet, consectetur adipiscing
+      <p>Boggarts lavender robes, Hermione Granger Fantastic Beasts and Where to Find Them. Bee in your bonnet Hand of
+        Glory elder
+        wand, spectacles House Cup Bertie Bott’s Every Flavor Beans Impedimenta. Stunning spells tap-dancing spider
+        Slytherin’s Heir
+        mewing kittens Remus Lupin. Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second
+        bedroom. Padma
+        and Parvati Sorting Hat Minister of Magic blue turban remember my last.</p>
+      <span class='expandButton'></span>
+    </div>
+    <div class="article">
+      <h2>React vs Angular vs Vue</h2>
+      <p class="date">Nov 7th, 2017</p>
+
+      <p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+        elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet,
+        consectetur
+        adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor
+        sit amet,
+        consectetur adipiscing elit. Squirtle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Wartortle Lorem
+        ipsum dolor
+        sit amet, consectetur adipiscing elit. Blastoise Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Caterpie Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Butterfree
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weedle Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit.
+        Kakuna Lorem ipsum dolor sit amet, consectetur adipiscing elit. Beedrill Lorem ipsum dolor sit amet, consectetur
+        adipiscing
         elit.</p>
 
-        <p>Pidgey Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pidgeotto Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Pidgeot Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rattata Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Raticate Lorem ipsum dolor sit amet, consectetur adipiscing elit. Spearow Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Fearow Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ekans Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Arbok Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pikachu Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Raichu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sandshrew Lorem ipsum dolor sit amet, consectetur adipiscing
-        elit. Sandslash Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidoran Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Nidorina Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidoqueen Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Nidoran Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidorino Lorem ipsum dolor
+      <p>Pidgey Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pidgeotto Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+        elit. Pidgeot Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rattata Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+        elit. Raticate Lorem ipsum dolor sit amet, consectetur adipiscing elit. Spearow Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+        elit. Fearow Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ekans Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+        elit. Arbok Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pikachu Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+        elit. Raichu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sandshrew Lorem ipsum dolor sit amet,
+        consectetur adipiscing
+        elit. Sandslash Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidoran Lorem ipsum dolor sit amet,
+        consectetur
+        adipiscing elit. Nidorina Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidoqueen Lorem ipsum dolor
+        sit amet,
+        consectetur adipiscing elit. Nidoran Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nidorino Lorem
+        ipsum dolor
         sit amet, consectetur adipiscing elit. Nidoking Lorem ipsum</p>
-        <span class='expandButton'></span>
-      </div>
-      <div class="article">
-        <h2>Professional Software Development in 2018</h2>
-        <p class="date">Nov 7th, 2017</p>
-        <p>Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
-          hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
-          Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? </p>
-        
-        <p>Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
-          hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR
-          hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor hodor?! Hodor
-          hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? </p>
-        
-        <p>Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
-          Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
-          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.
-          </p>
-
-        <p>Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor hodor, hodor;
-          hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor. Hodor, HODOR
-          hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor hodor?! Hodor
-          hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? </p>
-        <span class='expandButton'></span>
-      </div>
+      <span class='expandButton'></span>
     </div>
-  </body>
+    <div class="article">
+      <h2>Professional Software Development in 2018</h2>
+      <p class="date">Nov 7th, 2017</p>
+      <p>Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor
+        hodor, hodor, hodor
+        hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor
+        hodor, hodor.
+        Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? </p>
+
+      <p>Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor
+        hodor, hodor;
+        hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor.
+        Hodor, HODOR
+        hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor
+        hodor?! Hodor
+        hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? </p>
+
+      <p>Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor
+        hodor? Hodor!
+        Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor,
+        hodor.
+        Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor
+        hodor. Hodor.
+      </p>
+
+      <p>Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor, hodor. Hodor hodor, hodor, hodor hodor. Hodor! Hodor
+        hodor, hodor;
+        hodor hodor hodor? Hodor, hodor. Hodor. Hodor, hodor - HODOR hodor, hodor hodor hodor! Hodor, hodor. Hodor.
+        Hodor, HODOR
+        hodor, hodor hodor, hodor, hodor hodor. Hodor hodor - hodor - hodor... Hodor hodor hodor hodor hodor hodor
+        hodor?! Hodor
+        hodor - hodor hodor hodor. Hodor. Hodor hodor... Hodor hodor hodor hodor hodor? </p>
+      <span class='expandButton'></span>
+    </div>
+  </div>
+</body>
+
 </html>
